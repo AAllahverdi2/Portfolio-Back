@@ -10,7 +10,7 @@ app.use(express.json())
 mongoose.connect("mongodb+srv://agamaliyevallahverdi2:Allahverdi123.@cluster0.4uy4jne.mongodb.net/").then(res=>{
     console.log("connected to mongodb")
 })
-app.use("/portfolio",PortfolioRouter)
+app.use("/portfolio/skills",PortfolioRouter)
 app.listen(PORT,()=>{
     console.log("connected to back")
 })

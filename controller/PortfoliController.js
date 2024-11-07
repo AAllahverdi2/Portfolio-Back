@@ -2,7 +2,7 @@ const {Portfolio}=require("../schema/Protfolio.schema")
 const PortfolioController={
     getAll:async(req,res)=>{
         try{
-            const target=await Portfolio.find({})
+            const target=await Portfolio.find()
             res.send(target)
 
         }catch(error){
